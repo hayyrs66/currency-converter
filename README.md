@@ -8,6 +8,7 @@ This project is part of the ONE (Oracle Next Education) Program, Group 6, organi
 
 ## Features
 
+- Using [JDK 21](https://www.oracle.com/java/technologies/downloads/#jdk21-windows).
 - Converts between various currencies including Dollar, Argentine Peso, Brazilian Real, and Colombian Peso.
 - Retrieves real-time exchange rates from the [ExchangeRate-API](https://www.exchangerate-api.com/).
 - Allows users to input the amount they want to convert.
