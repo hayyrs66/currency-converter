@@ -10,6 +10,8 @@ public class DollarToColombianPeso implements Command {
     public void execute(double amount) throws IOException, InterruptedException {
         double conversion = ExchangeAPI.getConversion("COP");
         double convertedValue = amount * conversion;
-        System.out.println(amount + " USD " +  " are " + convertedValue + " COP ");
+        DecimalFormatter decimalFormatter = new DecimalFormatter();
+
+        System.out.println(amount + " USD " +  " are " + decimalFormatter.format(convertedValue) + " COP ");
     }
 }

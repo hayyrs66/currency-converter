@@ -10,6 +10,8 @@ public class DollarToBrazilianReal implements Command {
     public void execute(double amount) throws IOException, InterruptedException {
         double conversion = ExchangeAPI.getConversion("BRL");
         double convertedValue = amount * conversion;
-        System.out.println(amount + " USD " +  " are " + convertedValue + " BRL ");
+        DecimalFormatter decimalFormatter = new DecimalFormatter();
+
+        System.out.println(amount + " USD " +  " are " + decimalFormatter.format(convertedValue) + " BRL ");
     }
 }
