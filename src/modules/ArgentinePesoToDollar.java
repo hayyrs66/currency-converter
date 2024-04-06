@@ -11,6 +11,6 @@ public class ArgentinePesoToDollar implements Command {
     public void execute(double amount) throws IOException, InterruptedException {
         double conversion = ExchangeAPI.getConversion("ARS");
         double convertedValue = amount / conversion;
-        System.out.println(amount + " ARS "  + " are " + convertedValue + " Dollars ");
+        System.out.println(amount + " ARS "  + " are " + convertedValue + " USD ");
     }
 }
