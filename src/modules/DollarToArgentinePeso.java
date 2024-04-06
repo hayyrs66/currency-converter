@@ -10,5 +10,7 @@ public class DollarToArgentinePeso implements Command {
     @Override
     public void execute(double amount) throws IOException, InterruptedException {
         double conversion = ExchangeAPI.getConversion("ARS");
+        double convertedValue = amount * conversion;
+        System.out.println(amount + " USD " +  " are " + convertedValue + " ARS ");
     }
 }
